@@ -31,14 +31,15 @@ void exercise_3(int a, int b) {
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-  if (n > a) {
-      double resultx = (n - (n/100 * x));
-      cout << resultx;
-  }
-  else if (n > b) {
+  if (n > b) {
       double resulty = (n - (n/100 * y));
       cout << resulty;
-  } else {
+  }
+  else if (n > a) {
+      double resultx = (n - (n/100 * x));
+      cout << resultx;
+  } 
+  else {
       cout << n;
   }
 }
