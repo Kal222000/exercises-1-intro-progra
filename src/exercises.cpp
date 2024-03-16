@@ -20,7 +20,6 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   
   }
-}
 
 void exercise_3(int a, int b) {
   int result = a / b;
@@ -29,6 +28,7 @@ void exercise_3(int a, int b) {
   } 
   else {
       cout << result;
+}
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
