@@ -22,7 +22,7 @@ void exercise_2(double A, double B, double C) {
   }
 }
 
-void exercise_3(int a, double b) {
+void exercise_3(int a, int b) {
   int result = a / b;
   if (b == 0) {
       cout << "Imposible";
