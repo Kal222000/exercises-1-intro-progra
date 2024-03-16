@@ -20,12 +20,12 @@ void exercise_2(double A, double B, double C) {
   
   }
 
-void exercise_3(int a, float b) {
-  int result = a / b;
+void exercise_3(int a, int b) {
   if (b == 0) {
       cout << "Imposible";
   } 
   else {
+    int result = a / b;
       cout << result;
 }
 }
