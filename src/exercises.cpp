@@ -6,16 +6,15 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-   s1 = "milk";
-   s2 = "milkshake";
-   s3 = "month";
-   if (s1 < s2 & s1 < s3 ){
-    cout <= s1;
-   } else if (s2 < s1 && s2 < s3){
-     cout <= s2;
-   } else if (s3 < s1 & s3 < s2){
-    cout <= s3
-   }
+   if (s1 < s2 && s1 < s3){
+        cout << s1;
+    } 
+    else if (s2 < s1 && s2 < s3){
+        cout << s2;
+    } 
+    else if (s3 < s1 && s3 < s2){
+        cout << s3;
+    }
 }
 
 void exercise_2(double A, double B, double C) {
