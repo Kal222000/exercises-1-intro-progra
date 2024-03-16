@@ -31,7 +31,16 @@ void exercise_3(int a, int b) {
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-  // TODO: YOUR CODE HERE
+  if (n > a) {
+      double resultx = (n - (n/100 * x));
+      cout << resultx;
+  }
+  else if (n > b) {
+      double resulty = (n - (n/100 * y));
+      cout << resulty;
+  } else {
+      cout << n;
+  }
 }
 
 void exercise_5(char character) {
