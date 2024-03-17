@@ -22,7 +22,7 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   if (b == 0) {
-      string impo = "Imposible";
+      string impo = "Impossible";
       cout << impo;
   } 
   else {
