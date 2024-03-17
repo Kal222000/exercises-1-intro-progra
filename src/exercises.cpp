@@ -22,7 +22,8 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   if (b == 0) {
-      cout << "Imposible";
+      string impo = "Imposible";
+      cout << impo;
   } 
   else {
     int result = a / b;
