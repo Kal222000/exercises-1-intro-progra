@@ -34,14 +34,14 @@ void exercise_3(int a, int b) {
 void exercise_4(double n, double a, double b, double x, double y) {
   if (n > b) {
       double resulty = (n - (n/100 * y));
-      cout << resulty;
+      cout << resulty << endl;
   }
   else if (n > a) {
       double resultx = (n - (n/100 * x));
-      cout << resultx;
+      cout << resultx << endl;
   } 
   else {
-      cout << n;
+      cout << n << endl;
   }
 }
 
