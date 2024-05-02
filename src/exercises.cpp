@@ -17,7 +17,13 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 void exercise_2(double A, double B, double C) {
-  
+  double multpos;
+    double multnegat;
+    multpos = (-B+sqrt(B*B-(4*A*C)));
+    multnegat = (-B-sqrt(B*B-(4*A*C)));
+    double totalpos = multpos/(2*A);
+    double totalnegat = multnegat/(2*A);
+    cout<<totalpos<<" "<<totalnegat;
   }
 
 void exercise_3(int a, int b) {
