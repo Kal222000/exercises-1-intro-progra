@@ -108,21 +108,41 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   int aux = s5.size() - 1;
+  string aux;
+    aux += s1[0];
+    aux += s2[0];
+    aux += s3[0];
+    aux += s4[0];
+    aux += s5[0];
     if(s1[0] == s5[aux]){
-        return "Hemos encontrado algo!";
+      cout << aux << endl;
+      return "Hemos encontrado algo!";
     }
     else{
-        return "Aun sin suerte";
+      cout << aux << endl;
+      return "Aun sin suerte";
     }
 }
 
 int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
+  int result;
+      string z;
+  if( a < 0 || b < 0){
+      cout << 0 << endl;
+      return 0;
+  }
+  else{
+      int aux = a + b;
+      z = to_string(aux);
+      result = aux * z.size();
+      cout << result << endl;
+      return result;
+  }
 }
 
 string exercise_11(int number) {
   if (number == 11235813) {
-    return "Se encontro Fibonacci";
+    return "Se encontro a Fibonacci";
   }
   else {
     return "Esto no es de Fibonacci";
