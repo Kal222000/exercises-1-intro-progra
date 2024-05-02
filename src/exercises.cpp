@@ -87,22 +87,33 @@ void exercise_6(int number) {
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
   if (r < 0) {
-        cout << "Error: Radius cannot be negative.";
+        cout << "Error: Radius cannot be negative." << endl;
     }
     else {
     double number = (r * r); 
     double pi = 3.14;
     double Radius = (4 * pi * number);
-    cout << Radius;    
+    cout << Radius << endl;    
     }
 }
 
 void exercise_8(long int seconds) {
-  // TODO: YOUR CODE HERE
+  if(seconds < 0){
+        cout << "Error: Input seconds cannot be negative." << endl;
+    }
+    else{
+        
+    }
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
-  // TODO: YOUR CODE HERE
+  int aux = s5.size() - 1;
+    if(s1[0] == s5[aux]){
+        cout << "Hemos encontrado algo!" << endl;
+    }
+    else{
+        cout << "Aun sin suerte" << endl;
+    }
   return "";
 }
 
