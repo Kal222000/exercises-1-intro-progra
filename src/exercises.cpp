@@ -107,14 +107,13 @@ void exercise_8(long int seconds) {
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
-  string aux;
-    aux += s1[0];
-    aux += s2[0];
-    aux += s3[0];
-    aux += s4[0];
-    aux += s5[0];
-    cout << aux << endl;
-  return "";
+  int aux = s5.size() - 1;
+    if(s1[0] == s5[aux]){
+        return "Hemos encontrado algo!";
+    }
+    else{
+        return "Aun sin suerte";
+    }
 }
 
 int exercise_10(int a, int b) {
