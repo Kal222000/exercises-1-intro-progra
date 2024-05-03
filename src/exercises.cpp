@@ -115,6 +115,7 @@ void exercise_7(double r) {
 }
 
 void exercise_8(long int seconds) {
+  string reloj;
   if(seconds < 0){
     if(seconds < 0){
         cout << "Error: Input seconds cannot be negative." << endl;
@@ -130,7 +131,6 @@ void exercise_8(long int seconds) {
     string hora = "0";
     string minuto = ":0";
     string segundo = ":";
-    string reloj;
     hora += to_string(x);
    minuto += to_string(z);
     segundo += to_string(b);
