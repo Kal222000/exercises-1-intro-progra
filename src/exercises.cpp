@@ -17,11 +17,12 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 void exercise_2(double A, double B, double C) {
-    else if(A == 0 && B == 0){
+    if(A == 0 && B == 0){
       cout << "";
     }
-  if(A == 0){
+  else if(A == 0){
     cout << -C/B << endl;
+  }
     else {
     double contenido_raiz = (B*B-(4*A*C));
   if(contenido_raiz < 0){
@@ -41,7 +42,6 @@ void exercise_2(double A, double B, double C) {
   }
     }
   }
-}
 
 void exercise_3(int a, int b) {
   if (b == 0) {
