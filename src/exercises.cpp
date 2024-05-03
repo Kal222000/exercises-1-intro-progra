@@ -17,12 +17,11 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 void exercise_2(double A, double B, double C) {
-  if(A == 0){
-    cout << -C/B << endl;
-    }
     else if(A == 0 && B == 0){
       cout << "";
     }
+  if(A == 0){
+    cout << -C/B << endl;
     else {
     double contenido_raiz = (B*B-(4*A*C));
   if(contenido_raiz < 0){
@@ -42,6 +41,7 @@ void exercise_2(double A, double B, double C) {
   }
     }
   }
+}
 
 void exercise_3(int a, int b) {
   if (b == 0) {
@@ -116,6 +116,9 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   string reloj;
+  string hora = "0";
+  string minuto = ":0";
+  string segundo = ":";
   if(seconds < 0){
     if(seconds < 0){
         cout << "Error: Input seconds cannot be negative." << endl;
@@ -128,9 +131,6 @@ void exercise_8(long int seconds) {
     int y = seconds%3600;
     int z = y/60;
     int b = y%60;
-    string hora = "0";
-    string minuto = ":0";
-    string segundo = ":";
     hora += to_string(x);
    minuto += to_string(z);
     segundo += to_string(b);
@@ -138,13 +138,14 @@ void exercise_8(long int seconds) {
     reloj += minuto;
     if(segundo.size() == 2){
         segundo.resize(3, '0');
+        cout << reloj << endl;
     }
     else {
       reloj += segundo;
+      cout << reloj << endl;
     }
     }
 }
-cout << reloj << endl;
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
