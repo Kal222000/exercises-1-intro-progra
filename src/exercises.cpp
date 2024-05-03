@@ -17,13 +17,27 @@ void exercise_1(string s1, string s2, string s3) {
 }
 
 void exercise_2(double A, double B, double C) {
-  double multpos;
-    double multnegat;
-    multpos = (-B+sqrt(B*B-(4*A*C)));
-    multnegat = (-B-sqrt(B*B-(4*A*C)));
-    double totalpos = multpos/(2*A);
-    double totalnegat = multnegat/(2*A);
-    cout<<totalpos<<" "<<totalnegat;
+  if(A == 0){
+        cout << -C/B << endl;
+    }
+    else {
+        double contenido_raiz = (B*B-(4*A*C));
+  if(contenido_raiz < 0){
+      cout << "" << endl;
+  }
+  else {
+   double positivo = (-B+sqrt(contenido_raiz));
+  double negativo = (-B-sqrt(contenido_raiz));
+  double resultado_positivo = positivo/(2*A);
+  double resultado_negativo = negativo/(2*A);
+  if(resultado_positivo == resultado_negativo){
+      cout << resultado_positivo << endl;
+  }
+  else {
+      cout << resultado_positivo << resultado_negativo << endl;
+  }   
+  }
+    }
   }
 
 void exercise_3(int a, int b) {
@@ -99,10 +113,31 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   if(seconds < 0){
+    if(seconds < 0){
         cout << "Error: Input seconds cannot be negative." << endl;
     }
+    else if(seconds == 0){
+        cout << "00:00:00" << endl;
+    }
     else{
-        
+    int x = seconds/3600;
+    int y = seconds%3600;
+    int z = y/60;
+    int b = y%60;
+    string hora = "0";
+    string minuto = ":0";
+    string segundo = ":";
+    string reloj;
+    hora += to_string(x);
+   minuto += to_string(z);
+    segundo += to_string(b);
+    reloj += hora;
+    reloj += minuto;
+    if(segundo.size() == 2){
+        segundo.resize(3, '0');
+    }
+    reloj += segundo;
+    cout << reloj << endl;
     }
 }
 
