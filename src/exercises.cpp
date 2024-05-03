@@ -23,7 +23,7 @@ void exercise_2(double A, double B, double C) {
     else {
     double contenido_raiz = (B*B-(4*A*C));
   if(contenido_raiz < 0){
-    cout << "" << endl;
+    cout << "";
   }
   else {
   double positivo = (-B+sqrt(contenido_raiz));
@@ -34,7 +34,7 @@ void exercise_2(double A, double B, double C) {
       cout << resultado_positivo << endl;
   }
   else {
-      cout << resultado_positivo << resultado_negativo << endl;
+      cout << resultado_positivo << " " << resultado_negativo << endl;
   }   
   }
     }
@@ -136,8 +136,10 @@ void exercise_8(long int seconds) {
     if(segundo.size() == 2){
         segundo.resize(3, '0');
     }
-    reloj += segundo;
+    else {
+      reloj += segundo;
     cout << reloj << endl;
+    }
     }
 }
 }
