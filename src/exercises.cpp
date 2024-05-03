@@ -18,15 +18,15 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   if(A == 0){
-        cout << -C/B << endl;
+    cout << -C/B << endl;
     }
     else {
-        double contenido_raiz = (B*B-(4*A*C));
+    double contenido_raiz = (B*B-(4*A*C));
   if(contenido_raiz < 0){
-      cout << "" << endl;
+    cout << "" << endl;
   }
   else {
-   double positivo = (-B+sqrt(contenido_raiz));
+  double positivo = (-B+sqrt(contenido_raiz));
   double negativo = (-B-sqrt(contenido_raiz));
   double resultado_positivo = positivo/(2*A);
   double resultado_negativo = negativo/(2*A);
@@ -139,6 +139,7 @@ void exercise_8(long int seconds) {
     reloj += segundo;
     cout << reloj << endl;
     }
+}
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
