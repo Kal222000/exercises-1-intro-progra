@@ -137,6 +137,7 @@ void exercise_8(long int seconds) {
     reloj += minuto;
     if(segundo.size() == 2){
         segundo.resize(3, '0');
+        reloj += segundo;
         cout << reloj << endl;
     }
     else {
