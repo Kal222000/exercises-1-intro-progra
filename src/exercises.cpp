@@ -20,6 +20,9 @@ void exercise_2(double A, double B, double C) {
   if(A == 0){
     cout << -C/B << endl;
     }
+    else if(A == 0 && B == 0){
+      cout << "";
+    }
     else {
     double contenido_raiz = (B*B-(4*A*C));
   if(contenido_raiz < 0){
@@ -138,10 +141,10 @@ void exercise_8(long int seconds) {
     }
     else {
       reloj += segundo;
-    cout << reloj << endl;
     }
     }
 }
+cout << reloj << endl;
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
