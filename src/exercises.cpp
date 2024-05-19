@@ -266,5 +266,59 @@ void exercise_15(int a, int b, int c) {
 }
 
 void exercise_16(int debut, int fin) {
-  // TODO: YOUR CODE HERE
-}
+  if(debut < 0 || debut > 24 || fin < 0 || fin > 24){
+      cout << "Las horas deben estar entre 0 y 24!" << endl;
+  }
+  else if(debut == fin){
+      cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+  }
+  else if(debut > fin){
+      cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+  }
+  else{
+      if(debut >= 0 && fin <= 7){
+          int aux = fin - debut;
+          int result = aux * 1;
+          string aux1 = to_string(aux);
+          aux1 += " hora(s) con el tarifario de 1 boliviano(s)";
+          cout << "Haz alquilado una bicicleta por" << endl;
+          cout << aux1 << endl;
+          cout << "El monto total a pagar es de " << result << " boliviano(s)." << endl;
+      }
+      else if(debut >= 17 && fin <= 24){
+          int aux = fin - debut;
+          int result = aux * 1;
+          string aux1 = to_string(aux);
+          aux1 += " hora(s) con el tarifario de 1 boliviano(s)";
+          cout << "Haz alquilado una bicicleta por" << endl;
+          cout << aux1 << endl;
+          cout << "El monto total a pagar es de " << result << " boliviano(s)." << endl;
+      }
+      else if(debut >= 7 && fin <= 17){
+          int aux = fin - debut;
+          int result = aux * 2;
+          string aux1 = to_string(aux);
+          aux1 += " hora(s) con el tarifario de 2 boliviano(s)";
+          cout << "Haz alquilado una bicicleta por" << endl;
+          cout << aux1 << endl;
+          cout << "El monto total a pagar es de " << result << " boliviano(s)." << endl;
+      }
+      else{
+          unsigned int aux0 = 7 - debut;
+          int aux1 = 7 - debut;
+          unsigned int aux2 = 10 - aux1;
+          int aux3 = 10 - aux1;
+          unsigned int aux4 = fin - aux1 - aux3;
+          int suma = aux0 + aux4;
+          int result = (aux2 * 2) + suma; 
+          string pos1 = to_string(suma);
+          string pos2 = to_string(aux2);
+          pos1 += " hora(s) con el tarifario de 1 boliviano(s)";
+          pos2 += " hora(s) con el tarifario de 2 boliviano(s)";
+          cout << "Haz alquilado una bicicleta por" << endl;
+          cout << pos1 << endl;
+          cout << pos2 << endl;
+          cout << "El monto total a pagar es de " << result << " boliviano(s)." << endl;
+          }
+      }
+  }
