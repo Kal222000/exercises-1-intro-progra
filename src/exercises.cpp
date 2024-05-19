@@ -209,15 +209,15 @@ void exercise_12(string color1, int numb1,
       cout << 1 << endl;
   }
   else if(color2 != color4 && color3 != color4 && color1 != color4){
-      cout << "" << endl;
+      cout << "";
   }
-  else if(color2 == color4){
+  else if(color1 == color4){
       cout << 1 << endl;
   }
   else if(color2 == color4){
       cout << 2 << endl;
   }
-  else if(color2 == color4){
+  else if(color3 == color4){
       cout << 3 << endl;
   }
 }
