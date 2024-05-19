@@ -251,7 +251,7 @@ string exercise_14(int number_of_docs) {
   }
   else{
       string x = to_string(number_of_docs);
-      x += " documentos encontrados."
+      x += " documentos encontrados.";
       return x;
   }
 }
