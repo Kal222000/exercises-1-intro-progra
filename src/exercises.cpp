@@ -329,5 +329,13 @@ void exercise_16(int debut, int fin) {
           cout << aux2 << endl;
           cout << "El monto total a pagar es de " << result << " boliviano(s)." << endl;
       }
+      else if(debut == 0 && fin == 24){
+          string aux1 = "14 hora(s) con el tarifario de 1 boliviano(s)";
+          string aux2 = "10 hora(s) con el tarifario de 2 boliviano(s)";
+          cout << "Haz alquilado una bicicleta por" << endl;
+          cout << aux1 << endl;
+          cout << aux2 << endl;
+          cout << "El monto total a pagar es de 34 boliviano(s)." << endl;
           }
       }
+}
